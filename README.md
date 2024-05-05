@@ -1,6 +1,6 @@
 # Directory Structure  
 `Prompts.py`: Contains all the prompts  
-`GenerateGoalPromptwithPD: Based on Persona and Domain Generate Few Goals`
+`GenerateGoalPromptwithPD: Based on Persona and Domain Generate Few Goals`  
 `GenerateSurveyQuestions: Analyze the Selected Goal and generate list of questions for a survey`  
 
 `app.py`: Streamlit application to use prompts and make openAI fn call to get the response  
