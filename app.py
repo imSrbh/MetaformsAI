@@ -9,9 +9,13 @@ from Prompts import GenerateSurveyQuestions, GenerateGoalPromptwithPD
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
  
-
+# Streamlit App
+st.title("Survey Question Generator")
 # Initialize OpenAI client
-client = OpenAI()
+if not openai_api_key:
+    st.info("Please add your OpenAI API key to continue.")
+    st.stop()
+client = OpenAI(api_key=openai_api_key)
 
 def openai_function(prompt):
     system_msg = 'You are a helpful assistant for providing or answering the information based on the given prompt'
@@ -25,12 +29,11 @@ def openai_function(prompt):
 
     return response.choices[0].message.content
 
-# Streamlit App
-st.title("Survey Question Generator")
+
 
 # Get user input for Persona and Domain
 persona = st.text_input("Enter Persona (e.g., Marketing Manager/Retail Store Manager):")
-domain = st.text_input("Enter Domain (e.g., Sales/Marketing/Retail):")
+domain = st.text_input("(Optional) Enter Domain (e.g., Sales/Marketing/Retail):")
 final_prompt = GenerateGoalPromptwithPD.format(persona=persona, domain=domain)
 
 
