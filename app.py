@@ -5,7 +5,10 @@ import os
 from Prompts import GenerateSurveyQuestions, GenerateGoalPromptwithPD
 # Set up OpenAI API key
 # OpenAI.api_key = os.getenv("OPENAI_API_KEY")
-OpenAI.api_key = st.sidebar.text_input("Enter your OpenAI API Key")
+# OpenAI.api_key = st.sidebar.text_input("Enter your OpenAI API Key")
+with st.sidebar:
+    openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
+ 
 
 # Initialize OpenAI client
 client = OpenAI()
