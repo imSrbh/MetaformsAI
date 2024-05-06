@@ -31,7 +31,7 @@ Note:
 Please ensure that the generated output strictly should be in a professional way and adhere to formulate the List of strings as output.
 Again think step by step and confirm if the generated output is in the right format, if not fix it and make sure its in the expected list format.'''
 
-
+#Iteration1
 #Analyze the Selected Goal and generate list of questions for a survey 
 GenerateSurveyQuestions = f''' Task: Generate the survey questions based on the given goal:
 Instructions: Based on the provided goal, generate a set of 8-12 survey questions that would help achieve this goal. The questions should be clear, concise, and unbiased. Feel free to include different types of questions such as multiple-choice, rating scales, open-ended, etc. Present the questions in a numbered or bulleted list format.
@@ -48,4 +48,54 @@ Which of the following best describes your experience with our customer support?
 If you have interacted with our customer support, please rate your satisfaction with their service. (Scale of 1 to 5, where 1 is "Very Dissatisfied" and 5 is "Very Satisfied")
 Are there any additional features or improvements you would like to see in our product/service? (Open-ended)
 Please provide any additional comments or feedback you may have. (Open-ended)
+'''
+
+
+#Itreation2
+GenerateSurveyQuestions2 = f'''
+Task: Generate a set of 8-12 survey questions based on the given goal.
+
+Instructions:
+1. The questions should be clear, concise, unbiased, and directly relevant to the provided goal.
+2. Include a diverse range of question types such as multiple-choice, rating scales, open-ended, etc.
+3. Avoid repeating the same question or concept multiple times.
+4. Present the questions in a numbered or bulleted list format.
+
+Goal: {{goal}}
+
+For example, if the goal is "To understand customer satisfaction with our product/service," some relevant survey questions could be:
+
+- On a scale of 1 to 5, how satisfied are you with our overall product/service?
+- What specific features or aspects of our product/service do you find most valuable?
+- Are there any areas where our product/service could be improved? Please explain.
+- How likely are you to recommend our product/service to others? (Scale of 1 to 5)
+- Please rate your experience with our customer support team. (Multiple choice: Excellent, Good, Average, Poor, Never used)
+- If you have interacted with our customer support, how satisfied were you with their responsiveness and ability to resolve your issue? (Scale of 1 to 5)
+
+Note: These are just examples. Your generated questions should be tailored to the specific goal provided and should not simply repeat the examples verbatim.
+'''
+
+#Iteration3
+GenerateSurveyQuestions3 = f'''
+Task: Generate a set of 8-12 survey questions based on the given goal.
+
+Instructions:
+1. The questions should be clear, concise, unbiased, and directly relevant to the provided goal.
+2. Include a diverse range of question types such as multiple-choice, rating scales, open-ended, etc.
+3. Avoid repeating the same question or concept multiple times.
+4. Ensure questions are unbiased and do not lead or influence responses in a particular direction.
+5. Present the questions in a numbered or bulleted list format.
+
+Goal: {{goal}}
+
+For example, if the goal is "To understand customer satisfaction with our product/service," some relevant survey questions could be:
+
+- On a scale of 1 to 5, how would you rate your overall satisfaction with our product/service?
+- What specific features or aspects of our product/service do you find most valuable or helpful?
+- Are there any areas or aspects of our product/service that could be improved? If so, please explain.
+- How likely are you to recommend our product/service to others on a scale of 1 to 5?
+- Which of the following best describes your experience with our customer support team? (Multiple choice: Excellent, Good, Average, Poor, Never used customer support)
+- If you have interacted with our customer support, how satisfied were you with their responsiveness and ability to resolve your issue? (Scale of 1 to 5, or "Not applicable")
+
+Note: These are just examples. Your generated questions should be tailored to the specific goal provided and should not simply repeat the examples verbatim.
 '''
