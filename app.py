@@ -16,7 +16,7 @@ st.sidebar.title('About This App')
 
 st.sidebar.markdown('This application has two sections:')
 st.sidebar.markdown('1. User can Generate Goals by giving the Persona and domain and then can use the generated/suggested goals to generate survey questions.')
-st.sidebar.markdown('2. User can straightaway enter the Goals and can get the survey questions generated for 3 iterations.')
+st.sidebar.markdown('2. User can straightaway enter the Goals and can get the survey questions generated for 3 iterations[~15 Seconds to generate].')
 
 # Add link to the prompts file
 st.sidebar.markdown('[Prompts File](https://github.com/imSrbh/MetaformsAISurvey/blob/master/Prompts.py)')

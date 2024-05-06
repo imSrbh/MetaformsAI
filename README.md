@@ -1,5 +1,5 @@
 
->Live URL: [Survey Questions Generator](https://surveyquestiongenerator.streamlit.app/)
+>Live URL: [Survey Questions Generator](https://metaformsaisurvey.streamlit.app/)
 
 ## Directory Structure  
 - `Prompts.py`: Contains prompts  
